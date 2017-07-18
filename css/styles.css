@@ -1,0 +1,104 @@
+body {
+  background-color: #003366;
+  font-family: "Itim", cursive;
+  color: white;
+  font-size: 100%;
+}
+
+#header {
+  margin-bottom: 6em;
+}
+
+#title {
+  font-size: 8em;
+}
+
+.horizontal-flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+#settings {
+  background-color: #DD0048;
+  flex-basis: 30%;
+
+  font-size: 2em;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  height: 10em;
+  margin-right: 5em;
+  margin-top: 2.5em;
+  border-radius: 10px;
+}
+
+#add-min-pom, #sub-min-pom, #add-min-break, #sub-min-break {
+  background-color: transparent;
+}
+
+#add-min-pom:hover, #sub-min-pom:hover, #add-min-break:hover, #sub-min-break:hover {
+  color: white;
+}
+
+#add-min-pom:focus, #add-min-pom:active, #sub-min-pom:focus, #sub-min-pom:active, #add-min-break:focus, #add-min-break:active, #sub-min-break:focus, #sub-min-break:active {
+  outline: 0;
+  color: white;
+  box-shadow: none !important;
+}
+
+#progress-wrapper {
+  width: 304px;
+  height: 304px;
+}
+#dot-wrapper {
+  position: relative;
+  right: 1px;
+  bottom: 1px;
+  width: 304px;
+  height: 304px;
+  z-index: 10;
+}
+
+#progress {
+  position: relative;
+  top: 15px;
+  left: 75px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+#timer-outline {
+  position: relative;
+  bottom: 304px;
+}
+
+#progress-text {
+  font-size: 6em;
+  position: relative;
+  bottom: 65%;
+}
+
+#play_pause, #reset, #button_mode {
+  background-color: white;
+  color: #DD0048;
+  border-radius: 50%;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+#play_pause:active, #play_pause:focus, #reset:active, #reset:focus, #button_mode:focus, #button_mode:active {
+  box-shadow: none !important;
+  outline: 0 !important;
+}
+
+@-webkit-keyframes orbit {
+  from {
+    -webkit-transform: rotate(0deg)
+  }
+  to {
+    -webkit-transform: rotate(-300deg)
+  }
+}
